@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="fotografía, paisajes, personas, pics">
+    <meta name="description" content="Página de fotografía, principalmente de paisajes, de lugares de todo el mundo">
+    <title>Contacto | BI</title>
+    <link rel="shortcut icon" href="../img/Sin título.jpg" >
+    <link rel="stylesheet" href="../scss/main.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"/>
+</head>
+<body>
+  <header class="header">
+      <div>
+
+          <a href="../index.html"><img src="../img/sintitulo.jpg" alt="LOGO" width="48" class="logo"></a>
+      </div>
+      
+
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+    
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        
+        <li class="nav-item">
+          <a class="navbarra" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="navbarra dropdown-toggle" href="./Portfolio.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Portfolio
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="./fotos-personas.html">Personas</a></li>
+            <li><a class="dropdown-item" href="./fotos-paisajes.html">Paisajes</a></li>
+            
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="navbarra" href="./AboutMe.html">Sobre Mi</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbarra" href="./Contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+      
+  </header>
+    
+    
+    <fieldset>
+        
+        <form  action="enviar2.php" method="POST" class="form">
+            <div class="Contacto">
+              <h2 class="textosFotos"> Contacto</h2>
+              <p class="Contacto__TextoPrimario">
+                Usa el formulario que está debajo si tienes alguna duda o si quieres ponerte en contacto conmigo.
+              </p>
+                
+                
+                <div>
+                    <label for="nombre">Tu nombre</label>
+                </div>
+                
+                <div>                                        
+                        <input type="text" id="nombre" name="nombre" class="form__input" placeholder="Ingrese su nombre">   
+                </div>
+                <div >
+                    <label for="telefono">Número de teléfono</label>
+                </div>
+                <div>                                        
+                        <input type="tel" id="telefono" name="telefono" class="form__input" placeholder="Ingrese su telefono"> 
+                          
+                </div>
+                <div >            
+                    <label for="email">Tu correo</label>
+                </div>
+                <div>
+                       <input type="email" id="email" name="email" class="form__input" placeholder="Ingrese su correo">   
+                </div>                                
+                <div >
+                    <label for="asunto">Asunto</label>                                                
+                </div>
+                <div>
+                       <input type="text" id="asunto" name="asunto" class="form__input" placeholder="Coloque el asunto">   
+                </div>                
+                <div >                    
+                    <label for="caja">Deja tu comentario para mejorar este sitio</label>
+                </div>                    
+                <div >                    
+                       <textarea name="caja" id="caja" cols="30" rows="5" class="form__input" placeholder="Coloque su comentario"></textarea> 
+                </div>
+                
+                          <input type="submit" value="Enviar Comentario" class="form__button" name="submit" >
+                <p class="Contacto__TextoSecundario">Si quieres, puedes hacer una donación para motivarme a seguir subiendo fotos y mejorando este sitio.</p>
+                <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                data-preference-id="447888514-f23d9265-0e72-42fa-ad7c-594d11c6f888" data-source="button">
+                </script>
+            </div>
+            </form>
+
+    </fieldset>
+
+
+        
+    <footer class="Footer">
+
+    
+    <div class="FooterLink">
+        <div class="Links">
+            
+            <a href="https://www.instagram.com/bruno.iglesias13/" target="_blank"><img src="../img/Instagram-Icon.png" alt="LogoInstagram" width="35px" class="fotosLinks">Instagram</a>
+        </div>
+        <div class="Links">
+            <a href="https://twitter.com/BrunooIglesias" target="_blank"><img src="../img//Twitter-logo.svg.png" alt="LogoTwitter" width="20px" class="fotosLinks"> Twitter</a>
+        </div>
+    </div>
+    
+    
+    <p class="FooterTexto">&copy; 2022 - Todas las imagenes expuestas en esta página son de mi autoría, para cualquier uso, consultar.</p>    
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
