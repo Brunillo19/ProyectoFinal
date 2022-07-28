@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+/* MENU */
+/* ESTE CSS QUEDÓ EN DESUSO Y DESACTUALIZADO EN EL MOMENTO EN QUE APREDNÍ SASS, TIENE ALGUNAS PROPIEDADES QUE SE MANTIENEN, PERO NO ES EL FINAL */
+
+ 
+.header {
+    display: flex;
+    position: sticky;
+    top: 0.1px;
+    background: linear-gradient(90deg, black, rgb(0, 44, 138)); 
+    z-index: 2;
+    left:33%;
+    opacity: 85%;
+    justify-content: space-between;
+}
+
+
+
+
+
+.Inicio{
+    height: 95%;
+
+} 
+h1 {
+    position: absolute;
+    margin-left: 30%;
+    margin-right: 30%;
+vertical-align: auto;
+text-align: center;}
+section img {width:99.99%}
+
+
+
+.Titulo {
+    text-align: center;
+} 
+.h2 {
+    color: white;  
+}
+
+.Footer, .Footer a {
+    text-align: center;
+    justify-content: space-evenly;
+    list-style: none;
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+}
+.Footer {
+    background: linear-gradient(90deg, black, rgb(0, 44, 138)); 
+}
+
+.Footer .FooterLink {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.Contacto {
+    height: 100vh;
+    background-image: url(./img/Foto\ Fin.jpg);
+    font-family: 'Poiret One', cursive;  
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    background-size:cover;
+    color: white;
+}
+.form {
+    height: 100vh;
+}
+.textosFotos {
+    height: auto;
+    font-family: 'Poiret One', cursive; 
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    text-decoration: none;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: black;
+}
+.textosFotos img {
+    width: 40vh;
+}
+.textosFotos a {
+    text-decoration: none;
+    font-size: .7em;
+}
+
+
+
+.textosFotos img:hover {
+    border: 2px solid rgb(2, 248, 248);
+
+}
+.textosFotos a:hover {
+    color:red;
+    
+}
+.PortfolioFotos img {
+    width: 40vh;
+}
+
+.fotos {
+    height: auto;
+    filter: grayscale(1);
+    border: 2px solid rgb(81, 206, 255); 
+    transition: all .5s;  
+}
+.fotos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.GrillaFotos {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1vh;
+    grid-template-columns: repeat(4, 1fr);
+}
+.Personas {
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+
+}
+.fotos:hover {
+    filter: none;
+
+}
+
+.yo {
+    color: black;
+}
+
+
+
+.textito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carrusela {
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Footer */
+.fotosLinks {
+    filter: grayscale(1);
+}
+.Footer .FooterLink .Links:hover {
+    box-shadow: 0 0 20px 0px rgb(0 0 0 / 39%);
+    outline: 0;
+
+}
+.Links {
+    color: white;
+    background-color: transparent;
+}
+
+@media  (min-width: 768px) and (max-width: 1023px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(90deg,  rgb(155, 23, 155),black);
+    }
+    .header__menu ul a:hover{    
+        color: black;
+    }
+    .fotos {
+        display: grid;
+    }
+    .GrillaFotos {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        gap: 0.1vh;
+        grid-template-columns: repeat(2, auto); 
+      
+    }
+    .Personas {
+        display: grid;
+        grid-template-columns: repeat(2,auto); 
+
+    }
+    .transition {
+        margin-left: 7.5%; 
+        width: 85vw;
+        height: 80vh;
+        background-size: cover;
+        background-attachment:local;
+        justify-content: center;
+        align-items: center;
+        animation: mi-efecto 25s  2s  infinite ;
+    }
+}
+@media (max-width: 767px) {
+
+    .menuMobile {
+        display: block;
+    }
+    .header__menu {
+        display: none ;
+    }
+    a {
+
+        text-decoration: none !important;
+
+    }
+    a:hover {
+        color: black;
+    }
+    
+    .GrillaFotos {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        gap: 0.1vh;
+        grid-template-columns: repeat(2, auto);
+    
+    }
+        .Personas {
+            display: grid;
+            grid-template-columns: repeat(2,auto);
+            
+        }
+
+
+   
+} 
+
+
